@@ -12,3 +12,10 @@
 7. To run application itself just run 'run.py' module
 8. Once application is running open your browser and go to 'http://127.0.0.1:5000/api/v1/orders_data_by_date?date=20190801' for example query
 9. To run tests either run test_app.py in tests directory directly or run pytest at root folder
+
+
+Example API usage:
+    Terminal: curl http://127.0.0.1:5000/api/v1/orders_data_by_date?date=20190801  
+    Browser: http://127.0.0.1:5000/api/v1/orders_data_by_date?date=20190801
+
+Note that date must be provided in yyyymmdd format
