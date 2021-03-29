@@ -13,7 +13,9 @@ app_bp = Blueprint('app', __name__)
 @app_bp.route('/api/v1/orders_data_by_date', methods=['GET'])
 def orders_data_by_date():
     """Gathering required order data by date    
-    e.g.: GET /orders_data_by_date"""
+    e.g.: GET /orders_data_by_date?date=20190801
+    Parameter date is required and must be provided in yyyymmdd format
+    """
 
     if 'date' in request.args:
         date = request.args['date']
