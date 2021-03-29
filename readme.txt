@@ -19,3 +19,24 @@ Example API usage:
     Browser: http://127.0.0.1:5000/api/v1/orders_data_by_date?date=20190801
 
 Note that date must be provided in yyyymmdd format
+
+Example response:
+
+{
+  "commissions": {
+    "order_average": 1008.22, 
+    "promotions": {
+      "1": 0, 
+      "2": 188049.4, 
+      "3": 0, 
+      "4": 0, 
+      "5": 409117.8
+    }, 
+    "total": 9073.99
+  }, 
+  "customers": 9, 
+  "discount_rate_avg": 0.13, 
+  "items": 2895, 
+  "order_total_avg": 1182286.1, 
+  "total_discount_amount": 130429980.26
+}
