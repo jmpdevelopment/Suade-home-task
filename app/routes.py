@@ -49,10 +49,10 @@ def orders_data_by_date():
             product_id = row[5]
             commission_rate_for_vendor = commissions_rates_on_date.get(vendor_id)
             commission_for_order_line = commission_rate_for_vendor * row[3]
-            total_commissions_amount_on_date =+ round(commission_for_order_line, 2)
+            total_commissions_amount_on_date += round(commission_for_order_line, 2)
 
             if promotions_on_date.get(product_id):
-                commissions_per_promotion[str(promotions_on_date.get(product_id))] =+ round(commission_for_order_line, 2)
+                commissions_per_promotion[str(promotions_on_date.get(product_id))] += round(commission_for_order_line, 2)
 
         order_avg_commissions_on_date = round(total_commissions_amount_on_date/len(orders_on_date), 2)
 

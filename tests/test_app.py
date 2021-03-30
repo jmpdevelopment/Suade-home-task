@@ -21,7 +21,7 @@ class BasicTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         data = json.loads(response.data)
         self.assertEqual(data.get("customers"), 9)
-        self.assertEqual(data.get("commissions"), {'order_average': 1008.22, 'promotions': {'1': 0, '2': 188049.4, '3': 0, '4': 0, '5': 409117.8}, 'total': 9073.99})
+        self.assertEqual(data.get("commissions"), {'order_average': 2314804.1, 'promotions': {'1': 0, '2': 188049.4, '3': 0, '4': 0, '5': 1153804.8}, 'total': 20833236.94})
         self.assertEqual(data.get("discount_rate_avg"), 0.13)
         self.assertEqual(data.get("items"), 2895)
         self.assertEqual(data.get("order_total_avg"), 1182286.1)
